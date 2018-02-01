@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>くっきーのお部屋 | Blogs</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/path/favicon.png">
+    <!-- Material Design CSS -->
+     <!-- Material Design CSS -->
+    <link rel="stylesheet" href="material.min.css">
+    <!-- BOOTSTRAPのCSS読み込み -->
+    <link href="css/bootstrap.min.css">
+    <!--Original CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery読み込み -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- BOOTSTRAPのHS読み込み -->
+    <scrupt src="js/bootstrap.min.js"></scrupt>
+    <!-- Material Design JS -->
+    <script src="js/material.min.js"></script>
+    <!-- Material Design FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ScrollTrigger -->
+    <script src="js/ScrollTrigger.min.js"></script>
+     <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行
+        $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 100; 
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+    
+    <script>
+        // 共通パーツ読み込み
+        $(function(){
+        $("#header").load("header.html");
+        $("#Mheader").load("Mheader.html");
+        });
+    </script>
+</head>   
+<body>
+   <header id="header">
+       
+    </header>
+    
+    <header id="Mheader" class="MMenu">
+       
+    </header>
+   <div id="container">
+   <div id="list">
+       <div class="card">
+           <h1 class="TopText">護衛艦「むらさめ」特別乗艦！</h1>
+           <p>「清水みなと祭り」で公開されていた護衛艦「むらさめ」の特別乗艦に当選したので、撮影してきた写真をまとめました。</p>
+           <img class="thumbnail" src="Blogs/img/1/24.jpg">
+           <div class="buttons">
+               <a class="button" href="Blogs/1.html" target="_blank">詳しく</a>
+           </div>
+       </div>
+       <div class="card">
+           <h1 class="TopText">はいふりスタンプラリーと護衛艦「いかづち」乗艦記録！</h1>
+           <p>はいふりスタンプラリーの攻略と「横須賀YYのりものフェスタ」の海上自衛隊横須賀地方総監部訪問の記録です。</p>
+           <img src="">
+           <div class="buttons">
+               <a class="button" href="http://bit.ly/2uxWXm3" target="_blank">詳しく</a>
+           </div>
+            
+            
+       </div>
+   </div>
+   </div>
+   
+</body>
+
+<body>
+    
+</body>
+</html>

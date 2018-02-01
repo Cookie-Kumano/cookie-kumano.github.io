@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>くっきーのお部屋 | Videos</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/path/favicon.png">
+    <!-- Material Design CSS -->
+     <!-- Material Design CSS -->
+    <link rel="stylesheet" href="material.min.css">
+    <!-- BOOTSTRAPのCSS読み込み -->
+    <link href="css/bootstrap.min.css">
+    <!--Original CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery読み込み -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- BOOTSTRAPのHS読み込み -->
+    <scrupt src="js/bootstrap.min.js"></scrupt>
+    <!-- Material Design JS -->
+    <script src="js/material.min.js"></script>
+    <!-- Material Design FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ScrollTrigger -->
+    <script src="js/ScrollTrigger.min.js"></script>
+     <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行
+        $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 100; 
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+    
+        <script>
+            // 共通パーツ読み込み
+            $(function(){
+                $("#Mheader").load("Mheader.html");
+            });
+        </script>
+</head>   
+<body>
+   <header id="header">
+    <nav class="menu">
+        <li><a class="HOME animated flip" href="index.html"> くっきーのお部屋</a></li>
+            
+        <li><a href="videos.html"> Videos</a></li>
+        <li><a href="contents.html"> Contents</a></li>
+        <li><a href="Blog.html"> Blogs</a></li>
+        <li><a class="Twitter" href="https://www.twitter.com/DD115_Cookie" target="_blank">Twitter</a></li>
+        <li><a class="YouTube" href="https://www.youtube.com/channel/UCHcRZkcz4TKe7UqbN_c240A" target="_blank">YouTube</a></li>
+    </nav>
+    </header>
+    
+    <header id="Mheader" class="MMenu">
+       
+    </header>
+   <div class="Updating">
+       <h1 class="UpdatingTop">I'll be back.</h1>
+       <p class="UpdatingText">I'm busy developping the Cookie's Room for you and will be release soon.</p>
+   </div>
+   
+</body>
+
+<body>
+    
+</body>
+</html>
