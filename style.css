@@ -550,11 +550,14 @@ blockquote:after{
     text-shadow:0 1px 0 #000;
     font-family: 'Helvetica','Arial';
     text-align: center;
-    font-size: 4em;
 	letter-spacing: 1px;
 	line-height: normal;
 	
 	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.UpdatingImage{
+    width: 300px;
 }
 
 .UpdatingText{
@@ -563,7 +566,7 @@ blockquote:after{
     font-weight: 300;
 	font-size: 1.3em;
 	line-height: 1.5em;
-	color: dimgray;
+	color: gray;
 	
 	-webkit-font-smoothing: subpixel-antialiased;
 }
