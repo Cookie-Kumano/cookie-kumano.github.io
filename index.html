@@ -1,85 +1,169 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to CookieWorld! くっきーの自作ホームページです。">
-    <meta name="google-site-verification" content="QLTBIAJFfeU_bTCEP_umD1kqM4ZkRtvG6t2WNl14Zkg" />
-
-    <title>くっきーのお部屋</title>
-    <!--favicon-->
-    <link rel="icon" type="image/png" href="/img/path/favicon.png">
-    <!-- Material Design CSS -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css">
-    <!-- Original CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- JQuery読み込み -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Material Design JS -->
-    <script src="js/material.min.js"></script>
-    <!-- Material Design FONTS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- ScrollTrigger -->
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-            $(function() {
-            var h = $(window).height();
-
-            $('#wrap').css('display','none');
-            $('#loader-bg ,#loader').height(h).css('display','block');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cookie's Office</title>
+  <!--favicon-->
+  
+  <!--MDL CSS -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css">
+  <!--MY CSS  -->
+  <link rel="stylesheet" href="style.css">
+  <!--JQuery  -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!--MDL JS  -->
+  <script src="js/material.min.js"></script>
+  <!--ST JS   -->
+  <script src="js/ScrollTrigger.min.js"></script>
+  <!--SCR JS  -->
+  <script src="js/scr.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function(){
+          ScrollTrigger.init();
+      });
+  </script>
+  <!--MDLFONTS-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        // ロード画面
+    </script>
+    <script>
+        //共通パーツ読み込み
+    </script>
+    <script>
+    // 背景がﾄﾞｩｰﾝ
+        $(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if(100 + scroll/4 < 128) {
+                    $('.bgpic').css({
+                        backgroundSize: (100 + scroll/4)  + "%",
+                        top: -(scroll/10)  + "%"   
+                    });
+                }
             });
-            //3秒たったら強制的にロード画面を非表示
-            $(function(){
-            setTimeout('stopload()',1200);
-            });
-
-            function stopload(){
-            $('#wrap').css('display','block');
-            $('#loader-bg').delay(400).fadeOut(800);
-            $('#loader').delay(0).fadeOut(500);
-            }
-            </script>
-
-        <script>
-            // 共通パーツ読み込み
-            $(function(){
-                $("#header").load("html/header.html");
-                $("#Mheader").load("html/Mheader.html");
-                $("#container").load("html/container.html");
-            });
-        </script>
+        });
+    </script>
 </head>
+
 <body>
-
-    <div id="loader-bg">
-        <div id="loader">
-          <h1 class="HOME animated zoomIn loadtext">Cookie's Room</h1>
+    <header>
+     
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input" class="mdl-layout__drawer-button"><i class="material-icons" margin="0"></i></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      
+       <div  class="header-row">
+       <span class="header-title">くっきーの執務室</span>
+       <div class="header-space"></div>
+        <nav class="menu">
+          <ul id="menu" class="menu_list">
+           <li><a href="#page1"> Profile</a></li>
+           <li><a href="#page2"> Contents</a></li>
+           <li><a href="#page3"> Blogs</a></li>
+           <li><a href="#page4"> SNS</a></li>
+          </ul>
+        </nav>
         </div>
+        <div id="nav-content" class="mdl-layout__drawer">
+            <span class="mdl-layout-title">くっきーの執務室</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#page1"> Profile</a>
+                <a class="mdl-navigation__link" href="#page2"> Contents</a>
+                <a class="mdl-navigation__link" href="#page3"> Blogs</a>
+                <a class="mdl-navigation__link" href="#page4"> SNS</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class = topButton>
+        <a href="#top" class="topButtonText"><img src="img/top.png"></a>
     </div>
-<!--
-    <div id="wrap">
-        <header id="header"></header>
-
-        <header id="Mheader" class="MMenu"></header>
-
-        <div id="container"></div>
+    
+    <div id="top" class="container">
+      <div class="bgpic"></div>
+       <div class="section section1">
+          <div class="string1">
+              <h1>Hello, World</h1>
+              <h4>気まぐれで更新されるくっきーのホームページです。</h4>
+          </div>
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Update</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                大幅改装しました。
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    View Updates
+                </a>
+            </div>
+          </div>
+       </div>
+       <div id="page1" class="section section2">
+           <div class="string2">
+              <div class="contents">
+               <h1 class="title"> Profile</h1>
+               </div>
+           </div>
+           <div class='rcontents'>
+           <h3>多趣味な高校二年生です。<br>
+               楽器やプログラミングやイラストや撮影などをしています。
+        </h3>
+               <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="profile.html">詳しく</a>
+           </div>
+       </div>
+       <div id="page2" class="section section3">
+          <div class="string2">
+               <h1 class="title"> Contents</h1>
+            </div>
+            <div class="rcontents">
+                <h3>気まぐれで更新します。<br>
+                    作ったアプリやら絵やらをここに投げます。<br>
+                    ソフトウェアは全部オープンソースです。多分。</h3>
+                   <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="Contents.html">詳しく</a>
+            </div>
+       </div>
+       <div id="page3" class="section section4">
+           <div class="string2">
+                <h1 class="title"> Blogs</h1>
+           </div>
+           <div class="rcontents">
+                <h3>気が向いたら更新します。<br>
+                    遠征とか旅行とか買い物とかしたら晒すんだと思います。<br>
+                    画像多めだと思うのでモバイルの場合はご注意あれ。</h3>
+                   <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="Blogs.html">詳しく</a>
+           </div>
+       </div>
+       <div id="page4" class="section section5">
+           <div class="string2">
+                <h1 class="title"> SNS</h1>
+           </div>
+           <div class="rcontents">
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="https://www.twitter.com/DD115_Cookie"> Twitter</a>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="https://mstdn.y-zu.org/@Cookie"> Mastodon</a>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button_" href="https://pixiv.me/cookie_kumano"> Pixiv</a>
+            </div>
+       </div>
+       <div class="section section6">
+           <div class="string2">
+                <h1 class="title"> Designed by Cookie</h1>
+           </div>
+           <div class="rcontents">
+                <h3></h3>
+            </div>
+       </div>
     </div>
--->
-<div class="Updating">
-       <img class="UpdatingImage" src="img/mainte_kumano.png">
-       <h1 class="UpdatingTop">I'll be back.</h1>
-       <p class="UpdatingText">現在、当HPを大規模改修しています。弄る前のページを表示させるには、下のボタンを押して続行してくださいな。</p>
-        <a class="mdl-button mdl-js-button mdl-button--accent" href="top.html">続行</a>
-   </div>
-
+    
 </body>
 </html>
 
 <!--
 
->>>>;>;;;;;;;;;:;::;:::::::::;:;:;;;;;;;;;;;;;>>>>
+ >>>;>;;;;;;;;;:;::;:::::::::;:;:;;;;;;;;;;;;;>>>
 ;;;;;;:;:::::::::::::::::::::::::::::::::;;;;;;;;;
 ::::::::::~:~~~~~~~~~~~~~~~~~~~~~~~:~:::::::::::;;
 :::~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:~:::::
@@ -104,7 +188,6 @@ uuuuuuuuuuuuuuuWHHmmqqqqqkqkkkkHHHXuuzuuuuXXwwwuuZ
 ZuuuuuuuuuZZZZZZZZZXWHHHHHHHHHVyyyyyyyyXXXXXyyyVVV
 WXXWWWWWWfffpppppppppppppppppppppppffpppfpppppppbk
 qqmqqqqkqkkkkkkkkkkkkkbbbbbbbbbkkkkqqqqqqqmmHHHHHH
-gggggmqqqqqqqkqqqqqqqqqqkkkkbbkkkqqqqqmgggg@@@@@@@
-
+ ggggmqqqqqqqkqqqqqqqqqqkkkkbbkkkqqqqqmgggg@@@@@@
 
 -->
