@@ -50,6 +50,24 @@
                 $("#container").load("html/container.html");
             });
         </script>
+        
+        <script>
+        $(document).ready(
+            (function () {
+                var res = confirm("ここは旧バージョンのサイトです。よろしいですか？");
+                if(res == false) {
+                    if(confirm("新しいサイトに移動しますか？")) {
+                        window.location.href = "https://cookie-kumano.github.io";
+                    }
+                    else {
+                        window.open('about:blank','_self').close();
+                    }
+                }
+            })
+        )
+        </script>
+        
+        
 </head>
 <body>
 
@@ -58,7 +76,6 @@
           <h1 class="HOME animated zoomIn loadtext">Cookie's Room</h1>
         </div>
     </div>
-<!--
     <div id="wrap">
         <header id="header"></header>
 
@@ -66,13 +83,7 @@
 
         <div id="container"></div>
     </div>
--->
-<div class="Updating">
-       <img class="UpdatingImage" src="img/mainte_kumano.png">
-       <h1 class="UpdatingTop">I'll be back.</h1>
-       <p class="UpdatingText">現在、当HPを大規模改修しています。弄る前のページを表示させるには、下のボタンを押して続行してくださいな。</p>
-        <a class="mdl-button mdl-js-button mdl-button--accent" href="top.html">続行</a>
-   </div>
+
 
 </body>
 </html>
