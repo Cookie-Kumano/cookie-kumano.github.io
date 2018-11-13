@@ -303,8 +303,12 @@ nav a:hover {
     height: 46vh;
 }
 
-.section2{
+.section2 {
     background-color: lightgray;
+}
+
+.m-downbutton {
+    display: none;
 }
 
 /* かーどのせってい。 */
@@ -558,8 +562,8 @@ nav a:hover {
     flex-grow: 2;
 }
 .blogs-thumbnail {
-    width: 50%;
-    height: 50%;
+    width: 20vw;
+    height: 32vh;
     object-fit: cover;
     float: left;
     margin-right: 16px;
@@ -607,6 +611,19 @@ nav a:hover {
 }
 
 @media screen and (max-width: 800px) {
+    .topButtonText {
+        border-radius: 8px;
+        width: 48px;
+        height: 48px;
+        bottom: 16px;
+        right: 16px;
+    }
+    .topButtonIcon {
+        display: block;
+        position: fixed;
+        width: 48px;
+        height: 48px;
+    }
     .drawer-button {
         display: block;
     }
@@ -616,6 +633,14 @@ nav a:hover {
     
     .menu {
         display: none;
+    }
+    .section1 {
+        padding-bottom: 8vh;
+    }
+    .m-downbutton {
+        display: flex;
+        height: 8vh;
+        flex-grow: 2;
     }
     .rcontents {
         width: auto;
