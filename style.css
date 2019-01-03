@@ -793,7 +793,7 @@ nav a:hover {
     }
     .home-title {
         font-size: 32px;
-        line-height: inherit;
+        line-height: normal;
     }
     .home-buttons {
     }
@@ -812,7 +812,7 @@ nav a:hover {
     }
     .blogs-list-title {
         font-size: 32px;
-        line-height: inherit;
+        line-height: normal;
     }
     .blogs-list-description {
         
