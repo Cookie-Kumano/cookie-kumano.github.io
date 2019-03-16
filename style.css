@@ -512,6 +512,27 @@ nav a:hover {
     height: 32px;
 }
 
+.profileMain_like {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profileMain_like a {
+    margin: 8px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.profileMain_likepic {
+    width: auto;
+    height: 20vh;
+    max-width: 60vw;
+    object-fit: scale-down;
+}
+
 .profileMain_ican {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>くっきーの執務室 | タイマー的なアレ</title>
+    <link rel="stylesheet" href=/style.css>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/timer.js"></script>
+</head>
+<body>
+   <header>
+       <div  class="header-row">
+       <a class="header-title" href="/index.html">くっきーの執務室</a>
+        </div>
+   </header>
+    <div class = mainBlock>
+        <div class="block">
+            <p class="display" id="mTimer">たいまー</p>
+            <div class="control">
+                <button class="sButton" id="mPlus" type="button" onclick="mPlus()">＋</button>
+                <button class="button" id="mStart" type="button" onclick="cntMStart()">START</button>
+                <button class="button" id="mStop" type="button" onclick="cntStop()">STOP</button>
+                <button class="sButton" id="mMinus" type="button" onclick="mMinus()">ー</button>
+            </div>
+        </div>
+        <div class="block">
+            <p class="display" id="sTimer">たいまー</p>
+            <div class="control">
+                <button class="sButton" id="sPlus" type="button" onclick="sPlus()">＋</button>
+                <button class="button" id="sStart" type="button" onclick="cntSStart()">START</button>
+                <button class="button" id="sStop" type="button" onclick="cntStop()">STOP</button>
+                <button class="sButton" id="sMinus" type="button" onclick="sMinus()">ー</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
