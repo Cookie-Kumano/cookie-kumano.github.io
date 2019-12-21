@@ -65,3 +65,8 @@ td{
     text-decoration: none;
     color: dimgray;
 }
+
+.upp {
+  vertical-align: super;
+  font-size: 10px;
+}
