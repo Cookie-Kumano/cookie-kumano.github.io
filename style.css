@@ -360,7 +360,7 @@ nav a:hover {
 
 .home-buttons {
     display: flex;
-    flex-grow: 1;
+    min-width: 10vw;
     justify-content: flex-end;
     flex-direction: column;
 }
@@ -654,7 +654,7 @@ nav a:hover {
 }
 .blogs-list-buttons {
     display: flex;
-    flex-grow: 1;
+    min-width: 10vw;
     justify-content: flex-end;
     flex-direction: column;
 }
