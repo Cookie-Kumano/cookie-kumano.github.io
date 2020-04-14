@@ -313,6 +313,7 @@ nav a:hover {
 
 .section2 {
     background-color: lightgray;
+    height: 100%;
 }
 
 .home-list {
@@ -552,12 +553,12 @@ nav a:hover {
     object-fit: contain;
 }
 
-.contentsmain {
+.gallerymain {
     padding: 0;
     display: flex;
 }
 
-.contentblocks {
+.galleryblocks {
     position: absolute;
     margin: auto;
     width: 100%;
@@ -571,7 +572,7 @@ nav a:hover {
     align-content: center;
 }
 
-.c-list{
+.g-list{
     margin: 16px;
 
     border-radius: 16px;
@@ -592,26 +593,26 @@ nav a:hover {
     transition: 0.6s;
 }
 
-.c-buttonsA {
+.g-buttonsA {
     background-color: #ee0290;
 }
-.c-buttonsA:hover {
+.g-buttonsA:hover {
     background-color: #c7006e;
     color: #eeeeee;
 }
 
-.c-buttonsB {
+.g-buttonsB {
     background-color: #ffa726;
 }
-.c-buttonsB:hover {
+.g-buttonsB:hover {
     background-color: #f57c00;
     color: #eeeeee;
 }
 
-.c-buttonsC {
+.g-buttonsC {
      background-color: #41c300;
 }
-.c-buttonsC:hover {
+.g-buttonsC:hover {
     background-color: #008b00;
     color: #eeeeee;
 }
@@ -788,14 +789,14 @@ nav a:hover {
     width: auto;
     }
     
-    .contentblocks {
+    .galleryblocks {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 64px;
     }
-    .c-list {
+    .g-list {
         width: 180px;
         height: 180px;
         line-height: 180px;
