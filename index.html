@@ -1,129 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>くっきーの執務室</title>
-  <link rel="canonical" href="https://cookie-kumano.github.io/">
-
-  <!-- OGP(SNSでの表示)の各種設定 -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@DE224_Cookie" />
-  <meta property="og:url" content="https://cookie-kumano.github.io/" />
-  <meta property="og:title" content="くっきーの執務室" />
-  <meta property="og:description" content="気まぐれで更新されるくっきーのホームページです。" />
-  <meta property="og:image" content="img/favicon.png" />
-
-  <meta name="google-site-verification" content="Ye7tKnFKRvohOXBy2IvEJaF1guR5T9Oq1NCu4UJDIQ0" />
-  
-  <!--favicon-->
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <!--MDL CSS -->
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css">
-  <!--MY CSS  -->
-  <link rel="stylesheet" href="style.css">
-  <!--JQuery  -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <!--SCR JS  -->
-  <script src="js/scr.js"></script>
-  <script>
-      document.addEventListener('DOMContentLoaded', function(){
-          ScrollTrigger.init();
-      });
-  </script>
-  <!--MDLFONTS-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script>
-        // ロード画面
-    </script>
-    <script>
-        //共通パーツ読み込み
-        $(function(){
-                $("#header").load("/html/header.html");
-                $(".home-list").load("/html/home-list.html")
-            });
-    </script>
-    <script>
-    // 背景がﾄﾞｩｰﾝ
-        $(function() {
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                if(100 + scroll/4 < 128) {
-                    $('.bgpic').css({
-                        backgroundSize: (100 + scroll/4)  + "%",
-                        top: -(scroll/10)  + "%"   
-                    });
-                }
-            });
-        });
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kumano.moe</title>
 </head>
-
 <body>
-     <header id="header"></header>
-    
-    <div class = topButton>
-        <a href="#top" class="topButtonText"><img class="topButtonIcon" src="img/top.png"></a>
+    <div>
+        <h1>kumano.moe</h1>
+        <p>Now Developing...</p>
     </div>
-    
-    <div id="top" class="container">
-      <div class="bgpic"></div>
-       <div class="section section1">
-          <div class="string1">
-              <h1>Hello, World</h1>
-              <h4>気まぐれで更新されるくっきーのホームページです。</h4>
-          </div>
-          <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">Update</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                一覧表示とか追加しました
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    View Updates
-                </a>
-            </div>
-           </div>
-           <img src="img/down.png" class="m-downbutton">
-       </div>
-       <div id="page1" class="section section2">
-        <div class="home-list"></div>
-       </div>
+    <div>
+        <nav>
+            <a href="https://cookie.kumano.moe"> くっきーの執務室</a>
+            <a href="https://mstdn.y-zu.org/@Cookie"> Mastodon</a>
+            <a href="https://pixelfed.tokyo/Cookie"> Pixelfed</a>
+            <a href="https://www.pixiv.net/users/26660513"> Pixiv</a>
+            <a href="https://twitter.com/DE224_Cookie"> Twitter</a>
+        </nav>
     </div>
-    
 </body>
 </html>
-
-<!--
-
- >>>;>;;;;;;;;;:;::;:::::::::;:;:;;;;;;;;;;;;;>>>
-;;;;;;:;:::::::::::::::::::::::::::::::::;;;;;;;;;
-::::::::::~:~~~~~~~~~~~~~~~~~~~~~~~:~:::::::::::;;
-:::~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~:~:::::
-~~~~~~~~~~~~~~.~._((+ewkXkkA&+J-_~~~~~~~~~~~~~~~~:
-~~~~~.~.......((XVyyyZZZZZZyyyVffW&,....~~.~~~~~~~
-............(dVyZZXuXwvvrvvzzXQgNMMMN,........~.~~
-.....`.``` JyyZXzwOtZ7<!!!?7"MMMMMMMMMk...........
-.````````.dyZXXOOOv!``````````.WMMMMMMMN````.`....
-```````` JyZzwOO=>`` ```````````WMMMMMMM]`````````
-````    .yZzrOz1c                ???????'`````````
-`    `  JZuvtOgM:             `              `````
- ` `    XZurgMMM          `  `  `      ` ` `  ` ``
-``````` ZZQMMNNN` ```````` ```````````````````````
-````````XdNNNNNN```````````````````````````.`.....
-......`.dNNNNNN#l............_..-.....-_--________
-~~~~~___(####H#HN-_~______---___(H@H@H@@$~~~~~~~~~
-<+(((:::<WHHHHHHHN<<<<:~::___::+H@@@@@@#<<;++++++>
-+++??>++++WH@@H@@@@m+;:::::::(+gggggggHz+>>><+++++
-??1+++1=?=1W@@@@@@@@ggmmgggkmgggmgmmmBzzz==llOOzzz
-ZXXwwwwvvwwwwH@@ggggggggmmmmqqqqqqqHSrrrrvvwwwzzzO
-uuuuuuuuuuuuuuuWHHmmqqqqqkqkkkkHHHXuuzuuuuXXwwwuuZ
-ZuuuuuuuuuZZZZZZZZZXWHHHHHHHHHVyyyyyyyyXXXXXyyyVVV
-WXXWWWWWWfffpppppppppppppppppppppppffpppfpppppppbk
-qqmqqqqkqkkkkkkkkkkkkkbbbbbbbbbkkkkqqqqqqqmmHHHHHH
- ggggmqqqqqqqkqqqqqqqqqqkkkkbbkkkqqqqqmgggg@@@@@@
-
--->
